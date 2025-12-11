@@ -275,8 +275,8 @@ document.querySelectorAll(".popup-overlay").forEach(overlay => {
 
   for (let i = 1; i <= totalImages; i++) {
     imageList.push({
-      thumb: `${basePath}${baseName}${i}.jpg`,
-      full: `${basePath}${baseName}${i}.jpg`
+      thumb: `${basePath}${baseName}${i}.JPG`,
+      full: `${basePath}${baseName}${i}.JPG`
     });
   }
 
@@ -380,8 +380,8 @@ document.querySelectorAll(".popup-overlay").forEach(overlay => {
   const imageList = [];
   for (let i = 1; i <= totalImages; i++) {
     imageList.push({
-      thumb: `${basePath}${baseName}${i}.jpg`,
-      full: `${basePath}${baseName}${i}.jpg`,
+      thumb: `${basePath}${baseName}${i}.JPG`,
+      full: `${basePath}${baseName}${i}.JPG`,
     });
   }
 
