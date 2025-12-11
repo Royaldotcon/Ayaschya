@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ayaschya '26 - Download Certificate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+
+
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="Ayaschya, Ayaschya26, techfest, GCETTS, Texavision 2k26, gaming event, BGMI tournament, tech quiz, GCETTS techfest, Serampore college fest">
+    <meta name="author" content="Rahul Roy">
+    <link rel="canonical" href="https://ayaschya26.aitihya.co.in/">
+
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Ayaschya26 - Annual Techfest of GCETTS!</title>
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:title" content="Ayaschya26 - Annual Techfest of GCETTS!">
+    <meta property="og:description"
+        content="This is the official website for Ayaschya26, the annual techfest of GCETTS. Join us for an exciting lineup of tech events, workshops, and competitions. Made by Rahul Roy.">
+    <meta property="og:image" content="https://ayaschya26.aitihya.co.in/meta.png?v=1">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ayaschya26.aitihya.co.in/">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ayaschya26 - Annual Techfest of GCETTS!">
+    <meta name="twitter:description" content="Join us for tech events, workshops & competitions. Made by Rahul Roy.">
+    <meta name="twitter:image" content="https://ayaschya26.aitihya.co.in/meta.png">
+
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href=".././favicon.svg" type="image/svg+xml">
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+        rel="stylesheet">
+
+    <!-- 
+    - custom css link
+  -->
+    
+
+    <!-- 
+    - preload images
+  -->
+   
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-1: #0a0220;
+      --accent: #7b5cff;
+      --accent-2: #00c9ff;
+      --text: #ffffff;
+      --error: #ff6b6b;
+      --success: #2ecc71;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at top, #241268 0, #050014 55%, #02000b 100%);
+      color: var(--text);
+      padding: 20px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 520px;
+      background: rgba(15, 12, 41, 0.9);
+      border-radius: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.7);
+      padding: 26px 22px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: -40%;
+      background: conic-gradient(from 180deg,
+        rgba(123, 92, 255, 0.5),
+        rgba(0, 201, 255, 0.4),
+        transparent 60%);
+      opacity: 0.35;
+      mix-blend-mode: screen;
+      pointer-events: none;
+    }
+
+    .card-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    .card-header {
+      margin-bottom: 22px;
+      text-align: center;
+    }
+
+    .fest-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      border-radius: 999px;
+      background: linear-gradient(90deg, rgba(123, 92, 255, 0.2), rgba(0, 201, 255, 0.25));
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .card-header h1 {
+      margin-top: 12px;
+      font-size: 1.55rem;
+      line-height: 1.3;
+    }
+
+    .card-header p {
+      margin-top: 6px;
+      font-size: 0.9rem;
+      color: #c6c5ff;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    label {
+      display: block;
+      font-size: 0.9rem;
+      margin-bottom: 6px;
+    }
+
+    input[type="email"] {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      background: rgba(10, 6, 32, 0.9);
+      color: var(--text);
+      font-size: 0.95rem;
+      outline: none;
+      transition: border 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    input[type="email"]::placeholder {
+      color: #8e8bbd;
+    }
+
+    input[type="email"]:focus {
+      border-color: var(--accent-2);
+      box-shadow: 0 0 0 1px rgba(0, 201, 255, 0.4);
+    }
+
+    button {
+      width: 100%;
+      margin-top: 4px;
+      padding: 11px 14px;
+      border-radius: 999px;
+      border: none;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: var(--text);
+      font-weight: 600;
+      font-size: 0.98rem;
+      cursor: pointer;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+      transition: transform 0.12s ease, box-shadow 0.12s ease, filter 0.12s ease;
+    }
+
+    button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.75);
+      filter: brightness(1.03);
+    }
+
+    button:active {
+      transform: translateY(0);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.7);
+      filter: brightness(0.98);
+    }
+
+    button:disabled {
+      opacity: 0.6;
+      cursor: default;
+      box-shadow: none;
+      transform: none;
+    }
+
+    .message {
+      margin-top: 10px;
+      font-size: 0.85rem;
+      min-height: 1.1em;
+    }
+
+    .message.error {
+      color: var(--error);
+    }
+
+    .message.success {
+      color: var(--success);
+    }
+
+    .hint {
+      margin-top: 10px;
+      font-size: 0.78rem;
+      color: #a8a7ff;
+      text-align: center;
+    }
+
+    /* Hidden certificate background image */
+    #cert-bg {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-header">
+        <span class="fest-badge">Ayaschya '26 • GCETTS</span>
+        <h1>Download Participation Certificate</h1>
+        <p>Enter the email ID you used during registration to get your certificate.</p>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Registered Email Address</label>
+        <input type="email" id="email" placeholder="example@college.edu" required />
+      </div>
+
+      <button id="downloadBtn" type="button" disabled>Loading data…</button>
+
+      <div id="message" class="message"></div>
+      <p class="hint">If you face any issue, please contact the Ayaschya '26 organizing team.</p>
+    </div>
+  </div>
+
+  <!-- Pre-made certificate background -->
+  <img id="cert-bg" src="CERTIFICATE.png" alt="Certificate Background">
+
+  <!-- jsPDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <script>
+    const emailInput = document.getElementById("email");
+    const messageEl = document.getElementById("message");
+    const downloadBtn = document.getElementById("downloadBtn");
+    const certBgImg = document.getElementById("cert-bg");
+
+    let participants = [];
+    let csvReady = false;
+    let bgReady = false;
+
+    // ---------- LOAD CSV ----------
+    async function loadParticipantsFromCSV() {
+      try {
+        const res = await fetch("participants.csv");
+        if (!res.ok) throw new Error("CSV not found");
+        const text = await res.text();
+        participants = parseCSV(text);
+        csvReady = true;
+        enableIfReady();
+      } catch (err) {
+        console.error(err);
+        messageEl.textContent = "Could not load participant database (CSV).";
+        messageEl.className = "message error";
+      }
+    }
+
+    // Simple CSV parser for: email,name,dept,year,events
+    function parseCSV(csvText) {
+      const lines = csvText.trim().split(/\r?\n/);
+      if (lines.length < 2) return [];
+
+      const headers = lines[0].split(",").map(h => h.trim().toLowerCase());
+
+      function idx(...names) {
+        for (const n of names) {
+          const i = headers.indexOf(n);
+          if (i !== -1) return i;
+        }
+        return -1;
+      }
+
+      const emailIdx  = idx("email", "email address");
+      const nameIdx   = idx("name");
+      const deptIdx   = idx("dept", "department");
+      const yearIdx   = idx("year");
+      const eventsIdx = idx("events", "games");
+
+      const rows = [];
+      for (let i = 1; i < lines.length; i++) {
+        if (!lines[i].trim()) continue;
+        const cols = lines[i].split(",").map(c => c.trim());
+        rows.push({
+          email:  (cols[emailIdx]  || "").toLowerCase(),
+          name:   cols[nameIdx]   || "",
+          dept:   cols[deptIdx]   || "",
+          year:   cols[yearIdx]   || "",
+          events: cols[eventsIdx] || ""
+        });
+      }
+      return rows;
+    }
+
+    // ---------- LOAD BACKGROUND ----------
+    function waitForBackground() {
+      if (certBgImg.complete) {
+        bgReady = true;
+        enableIfReady();
+      } else {
+        certBgImg.addEventListener("load", () => {
+          bgReady = true;
+          enableIfReady();
+        });
+        certBgImg.addEventListener("error", (e) => {
+          console.error("Certificate image load error", e);
+          messageEl.textContent = "Could not load certificate background image.";
+          messageEl.className = "message error";
+        });
+      }
+    }
+
+    function enableIfReady() {
+      if (csvReady && bgReady) {
+        downloadBtn.disabled = false;
+        downloadBtn.textContent = "Download Certificate (PDF)";
+      }
+    }
+
+    // ---------- BUTTON HANDLER ----------
+    downloadBtn.addEventListener("click", async () => {
+      const rawEmail = emailInput.value.trim();
+      messageEl.textContent = "";
+      messageEl.className = "message";
+
+      if (!rawEmail) {
+        messageEl.textContent = "Please enter your registered email address.";
+        messageEl.classList.add("error");
+        return;
+      }
+
+      const email = rawEmail.toLowerCase();
+      const p = participants.find(x => x.email === email);
+
+      if (!p) {
+        messageEl.textContent = "Email not found. Please check the email used during registration.";
+        messageEl.classList.add("error");
+        return;
+      }
+
+      try {
+        await generateCertificatePDF(p);
+        messageEl.textContent = "Certificate generated successfully.";
+        messageEl.classList.add("success");
+      } catch (err) {
+        console.error(err);
+        messageEl.textContent = "Something went wrong while generating the certificate.";
+        messageEl.classList.add("error");
+      }
+    });
+
+    // ---------- PDF WITH BACKGROUND ----------
+    async function generateCertificatePDF(p) {
+  const { jsPDF } = window.jspdf;
+  const doc = new jsPDF({
+    orientation: "landscape",
+    unit: "pt",
+    format: "A4"
+  });
+
+  const pageWidth  = doc.internal.pageSize.getWidth();
+  const pageHeight = doc.internal.pageSize.getHeight();
+
+  // Draw full-page background certificate
+  doc.addImage(certBgImg, "PNG", 0, 0, pageWidth, pageHeight);
+
+  // -------- Text on the yellow line: "Name, Year, Dept" --------
+  // Build the text
+  let lineText = p.name || "";
+  if (p.year)  lineText += `, ${p.year} Year`;
+  if (p.dept)  lineText += `, ${p.dept} Dept.`;
+
+  // Base font setup
+  doc.setFont("helvetica", "bold");
+  let fontSize = 22;            // starting font size
+  doc.setFontSize(fontSize);
+  doc.setTextColor(255, 255, 255);
+
+  // Auto-shrink if the line is too long for the yellow bar
+  const maxWidth = pageWidth * 0.7; // ~70% of width centered
+  while (doc.getTextWidth(lineText) > maxWidth && fontSize > 10) {
+    fontSize -= 1;
+    doc.setFontSize(fontSize);
+  }
+
+  // Y-position for the yellow line (relative, so it adapts if size changes)
+  const lineY = pageHeight * 0.43;  // tweak 0.45–0.48 if needed
+
+  // Centered text on that line
+  doc.text(lineText, pageWidth / 2, lineY, { align: "center" });
+
+  // Save PDF
+  const safeName = (p.name || "Participant").replace(/[^a-z0-9]/gi, "_");
+  doc.save(`Ayaschya26_Certificate_${safeName}.pdf`);
+}
+
+
+
+    // Init
+    loadParticipantsFromCSV();
+    waitForBackground();
+  </script>
+</body>
+</html>
